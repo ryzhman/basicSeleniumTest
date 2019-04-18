@@ -12,7 +12,7 @@ public class ApplicationRunner {
 	public static void main(String[] args) throws InterruptedException {
 		//TODO replace the path to geckodriver.exe (Google where to download the latest version)
 		System.setProperty("webdriver.gecko.driver",
-				"C:\\Users\\oryzhkov\\Downloads\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+				"/path/to/geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://www.google.com");
 		WebElement element = driver.findElement(By.name("q"));
